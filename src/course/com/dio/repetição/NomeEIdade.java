@@ -6,17 +6,16 @@ public class NomeEIdade {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        String nome;
-        int idade;
+        String nome = "Jodecir";
+        int idade = 22;
 
-        while(true) {
+        while(idade < 0 | idade > 100) {
             System.out.println("Nome: ");
             nome = scan.next();
             if (nome.equals("0")) break;
 
             System.out.println("Idade: ");
             idade = scan.nextInt();
-            if (idade == 0) break;
         }
 
         System.out.println("Continua aqui...");
