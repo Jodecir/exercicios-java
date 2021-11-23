@@ -11,7 +11,7 @@ public class NomeEIdade {
         boolean fechado = false;
         String repetir;
 
-        while (fechado == false) {
+        do {
             System.out.println("Nome: ");
             nome = scan.next();
             if (nome.equals("0")) break;
@@ -22,10 +22,10 @@ public class NomeEIdade {
 
             System.out.println("Deseja continuar (s/n): ");
             repetir = scan.next();
-            if (repetir == "n") {
+            if (repetir.equals("n")) {
+                System.out.println("Finalizado aqui...");
                 fechado = true;
             }
-        }
-        System.out.println("Finalizado aqui...");
+        } while (fechado == false);
     }
 }
