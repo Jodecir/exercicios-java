@@ -6,21 +6,40 @@ public class ParOuImpar {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int n1;
+        int quantNumeros;
+        int numero;
+        int quantPares = 0, quantImpares = 0;
+
+        System.out.println("Quantidade de números: ");
+        quantNumeros = scan.nextInt();
+
+        int count = 0;
+
         boolean fechado = false;
         String repetir;
 
         do {
-            System.out.println("Digite um número: ");
-            n1 = scan.nextInt();
-            if (n1 % 2 == 0) {
-                System.out.println("Número Par");
-            } else if (n1 % 2 == 1) {
-                System.out.println("Número Ímpar");
-            } else {
-                System.out.println("Valor Inválido");
-            }
+            do { 
+                System.out.println("Digite um número: ");
+                numero = scan.nextInt();
+    
+                if (numero % 2 == 0) {
+                    System.out.println("Número Par");
+                    quantPares++;
+                } else if (numero % 2 == 1) {
+                    System.out.println("Número Ímpar");
+                    quantImpares++;
+                } else {
+                    System.out.println("Valor Inválido");
+                }
+    
+                count = count + 1;
+                
+            } while(count < quantNumeros);
 
+            System.out.println("Quantidade Par: " + quantPares);
+            System.out.println("Quantidade Ímpar: " + quantImpares);
+            
             System.out.println("Deseja continuar (s/n): ");
             repetir = scan.next();
             if (repetir.equals("n")) {
