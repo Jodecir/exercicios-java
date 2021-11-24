@@ -10,24 +10,37 @@ public class MaiorEMedia {
         int numero;
         int maior = 0, soma = 0;
 
-        System.out.println("Quantidade de números: ");
-        quantNumeros = scan.nextInt();
-
         int count = 0;
-        
+
+        boolean fechado = false;
+        String repetir;
+
         do {
-            System.out.println("Digite um número: ");
-            numero = scan.nextInt();
+            do {
+                System.out.println("Quantidade de números: ");
+                quantNumeros = scan.nextInt();
+                if (quantNumeros < 1) break;
 
-            soma = soma + numero;
+                System.out.println("Digite um número: ");
+                numero = scan.nextInt();
 
-            if (numero > maior) maior = numero;
+                soma = soma + numero;
 
-            count = count + 1;
-        } while(count < quantNumeros);
+                if (numero > maior) maior = numero;
 
-        System.out.println("Maior: " + maior);
-        System.out.println("Média: " + (soma/5));
+                count = count + 1;
+            } while(count < quantNumeros);
+
+            System.out.println("Maior: " + maior);
+            System.out.println("Média: " + (soma/5));
+
+            System.out.println("Deseja continuar (s/n): ");
+            repetir = scan.next();
+            if (repetir.equals("n")) {
+                System.out.println("Finalizado aqui...");
+                fechado = true;
+            }
+        } while (fechado == false);
         scan.close();
     }
 }
