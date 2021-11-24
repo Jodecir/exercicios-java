@@ -10,9 +10,6 @@ public class ParOuImpar {
         int numero;
         int quantPares = 0, quantImpares = 0;
 
-        System.out.println("Quantidade de números: ");
-        quantNumeros = scan.nextInt();
-
         int count = 0;
 
         boolean fechado = false;
@@ -20,6 +17,9 @@ public class ParOuImpar {
 
         do {
             do { 
+                System.out.println("Quantidade de números: ");
+                quantNumeros = scan.nextInt();
+
                 System.out.println("Digite um número: ");
                 numero = scan.nextInt();
     
