@@ -27,5 +27,6 @@ public class NomeEIdade {
                 fechado = true;
             }
         } while (fechado == false);
+        scan.close();
     }
 }
