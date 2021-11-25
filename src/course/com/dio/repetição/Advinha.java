@@ -45,6 +45,9 @@ public class Advinha {
             if (repetir.equals("n")) {
                 System.out.println("Finalizado aqui...");
                 fechado = true;
+            } else {
+                count = 0;
+                numRandom = random.nextInt(100);
             }
         } while (fechado == false);
         scan.close();
