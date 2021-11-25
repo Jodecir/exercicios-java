@@ -20,7 +20,13 @@ public class Advinha {
             do {
                 System.out.println("Digite um número: ");
                 numero = scan.nextInt();
-                if (numero < 1 | numero > 100) break;
+
+                while (numero < 1 | numero > 100) {
+                    System.out.println("Número Inválido! , chute um número de 1 a 100: ");
+                    numero = scan.nextInt();
+                }
+                
+                count = count + 1;
 
                 if (numero < numRandom) {
                     System.out.println("Errou, o número sorteado é Maior");
@@ -28,11 +34,11 @@ public class Advinha {
                     System.out.println("Errou, o número sorteado é Menor");
                 } else {
                     System.out.println("Parabéns, você tem muita sorte e acertou!");
+                    System.out.println("---------------------");
                     System.out.println("Tentativas necessárias: " + count);
+                    System.out.println("---------------------");
                 }
-
-                count = count + 1;
-            } while(numero != numRandom);
+            } while (numero != numRandom);
 
             System.out.println("Deseja continuar (s/n): ");
             repetir = scan.next();
