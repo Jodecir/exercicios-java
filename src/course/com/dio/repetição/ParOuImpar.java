@@ -2,6 +2,8 @@ package course.com.dio.repetição;
 
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class ParOuImpar {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -14,14 +16,12 @@ public class ParOuImpar {
 
         boolean fechado = false;
         String repetir;
-
+        
         do {
-            do { 
-                System.out.println("Quantidade de números: ");
-                quantNumeros = scan.nextInt();
+            quantNumeros = Integer.parseInt(JOptionPane.showInputDialog("Quantidade de números: "));
 
-                System.out.println("Digite um número: ");
-                numero = scan.nextInt();
+            do {
+                numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um número: "));
     
                 if (numero % 2 == 0) {
                     System.out.println("Número Par");
