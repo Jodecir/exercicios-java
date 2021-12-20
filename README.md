@@ -10,7 +10,7 @@ Repositório de estudo e resoluções de problemas em java
 
 ### Linguagens Utilizadas:
 
-[![Java Badge](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat-square&logo=java&logoColor=white&link=https://docs.oracle.com/en/java/)](https://docs.oracle.com/en/java/)
+[![Java Badge](https://img.shields.io/badge/Java-%23ED8B00.svg?style=flat-square&logo=java&logoColor=white&link=https://docs.oracle.com/en/java/)](https://docs.oracle.com/en/java/)
 
 #### Contatos:
 
