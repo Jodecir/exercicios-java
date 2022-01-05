@@ -7,17 +7,18 @@ public class Idade {
         Scanner scan = new Scanner(System.in);
 
         int idade;
+        int maiorIdade = 18;
 
         boolean fechado = false;
         String repetir;
 
         do {
-            System.out.println("Idade: ");
+            System.out.println("Insira sua idade: ");
             idade = scan.nextInt();
 
-            if (idade >= 18) {
+            if (idade >= maiorIdade) {
                 System.out.println("Você é maior de idade");
-            } else if (idade > 0 & idade < 18) {
+            } else if (idade > 0 & idade < maiorIdade) {
                 System.out.println("Você é menor de idade");
             } else {
                 System.out.println("Valor inválido");
