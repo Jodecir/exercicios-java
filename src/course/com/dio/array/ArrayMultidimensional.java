@@ -1,4 +1,4 @@
-package exercicios_java.src.course.com.dio.array;
+package src.course.com.dio.array;
 
 import java.util.Random;
 import java.util.Scanner;

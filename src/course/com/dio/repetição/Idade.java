@@ -1,6 +1,8 @@
-package exercicios_java.src.course.com.dio.repetição;
+package src.course.com.dio.repetição;
 
 import java.util.Scanner;
+
+import javax.swing.JOptionPane;
 
 public class Idade {
     public static void main(String[] args) {
@@ -8,18 +10,20 @@ public class Idade {
 
         int idade;
         int maiorIdade = 18;
+        String situacao;
 
         boolean fechado = false;
         String repetir;
 
         do {
-            System.out.println("Insira sua idade: ");
-            idade = scan.nextInt();
+            idade = Integer.parseInt(JOptionPane.showInputDialog("Insira sua idade: "));
 
             if (idade >= maiorIdade) {
-                System.out.println("Você é maior de idade");
+                situacao = "já podendo dirigir";
+                System.out.println("Você é maior de idade, " + situacao);
             } else if (idade > 0 & idade < maiorIdade) {
-                System.out.println("Você é menor de idade");
+                situacao = "ainda não podendo dirigir";
+                System.out.println("Você é menor de idade, " + situacao);
             } else {
                 System.out.println("Valor inválido");
             }

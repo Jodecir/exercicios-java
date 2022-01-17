@@ -1,4 +1,4 @@
-package exercicios_java.src.course.com.dio.repetição;
+package src.course.com.dio.repetição;
 
 import java.util.Scanner;
 
