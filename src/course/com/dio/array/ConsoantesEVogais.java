@@ -1,4 +1,4 @@
-package course.com.dio.array;
+package exercicios_java.src.course.com.dio.array;
 
 import java.util.Scanner;
 
