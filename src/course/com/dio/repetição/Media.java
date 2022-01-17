@@ -9,7 +9,7 @@ public class Media {
         Scanner scan = new Scanner(System.in);
 
         String nome, situacao;
-        double n1, n2, n3, n4, media;
+        double n1, n2, n3, n4;
         int quantAlunos;
         int min = 0;
         int max = 10;
@@ -43,7 +43,7 @@ public class Media {
                     n4 = Double.parseDouble(JOptionPane.showInputDialog("Nota Inválida, Repita o 2º Bimestre:"));
                 }
 
-                media = (n1 + n2 + n3 + n4)/4;
+                double media = criarMedia(n1, n2, n3, n4);
 
                 if (media >= mediaAprovacao) {
                     situacao = "Aprovado";
@@ -66,5 +66,9 @@ public class Media {
             }
         } while (fechado == false);
         scan.close();
+    }
+
+    public static double criarMedia(double a, double b, double c, double d) {
+        return (a + b + c + d) / 4;
     }
 }
