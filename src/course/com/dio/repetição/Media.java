@@ -8,11 +8,13 @@ public class Media {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        String nome;
+        String nome, situacao;
         double n1, n2, n3, n4, media;
         int quantAlunos;
         int min = 0;
         int max = 10;
+        int mediaAprovacao = 8;
+        int mediaRecuperacao = 7;
 
         int count = 0;
 
@@ -42,8 +44,16 @@ public class Media {
                 }
 
                 media = (n1 + n2 + n3 + n4)/4;
+
+                if (media >= mediaAprovacao) {
+                    situacao = "Aprovado";
+                } else if (media >= mediaRecuperacao ) {
+                    situacao = "em Recuperação";
+                } else {
+                    situacao = "Reprovado";
+                }
         
-                JOptionPane.showMessageDialog(null, "A Média do aluno " + nome + " é " + media);
+                JOptionPane.showMessageDialog(null, "A Média do aluno " + nome + " é " + media + " e ele está " + situacao);
 
                 count = count + 1;
             } while(count < quantAlunos);
