@@ -17,7 +17,7 @@ public class ConsoantesEVogais {
 
         do {
             do {
-                System.out.println("Insira uma Letra: ");
+                System.out.print("Insira uma Letra: ");
                 String letra = scan.next();
 
                 if  ( !( letra.equalsIgnoreCase("a") |
