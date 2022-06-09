@@ -18,11 +18,11 @@ public class Advinha {
 
         do {
             do {
-                System.out.println("Digite um número: ");
+                System.out.print("Digite um número: ");
                 numero = scan.nextInt();
 
                 while (numero < 1 | numero > 100) {
-                    System.out.println("Número Inválido! , chute um número de 1 a 100: ");
+                    System.out.print("Número Inválido! , chute um número de 1 a 100: ");
                     numero = scan.nextInt();
                 }
                 
