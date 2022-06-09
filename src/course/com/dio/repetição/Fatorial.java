@@ -10,12 +10,12 @@ public class Fatorial {
         String repetir;
 
         do {
-            System.out.println("Fatorial: ");
+            System.out.print("Insira o número que deseja o fatorial: ");
             int valor = scan.nextInt();
 
             int resultado = 1;
 
-            System.out.print(valor +"! = ");
+            System.out.print(valor + "! = ");
             for(int i = valor; i >= 1; i--) {
                 resultado = resultado * i;
             }
