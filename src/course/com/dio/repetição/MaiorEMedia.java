@@ -16,12 +16,12 @@ public class MaiorEMedia {
         String repetir;
 
         do {
+            System.out.print("Quantidade de números: ");
+            quantNumeros = scan.nextInt();
             do {
-                System.out.println("Quantidade de números: ");
-                quantNumeros = scan.nextInt();
                 if (quantNumeros < 1) break;
 
-                System.out.println("Digite um número: ");
+                System.out.print("Digite um número: ");
                 numero = scan.nextInt();
 
                 soma = soma + numero;
