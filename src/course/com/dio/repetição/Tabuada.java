@@ -10,10 +10,10 @@ public class Tabuada {
         String repetir;
 
         do {
-            System.out.println("Tabuada: ");
+            System.out.println("Insira o número que deseja a tabuada: ");
             int tabuada = scan.nextInt();
 
-            System.out.println("Tabuada de " + tabuada + ":");
+            System.out.println("Tabuada do " + tabuada + ":");
             for(int i = 1; i <= 10; i = i + 1) {
                 System.out.println(tabuada + " X " + i + " = " + (tabuada * i));
             }
