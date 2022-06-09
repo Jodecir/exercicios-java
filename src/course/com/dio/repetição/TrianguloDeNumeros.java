@@ -8,6 +8,7 @@ public class TrianguloDeNumeros {
 
         boolean fechado = false;
         String repetir;
+        
         do {
             System.out.print("Triangulo de numeros: ");
             int valorFinal = scan.nextInt();
