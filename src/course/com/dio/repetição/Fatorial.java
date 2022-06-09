@@ -11,16 +11,16 @@ public class Fatorial {
 
         do {
             System.out.println("Fatorial: ");
-            int fatorial = scan.nextInt();
+            int valor = scan.nextInt();
 
-            int multiplicacao = 1;
+            int resultado = 1;
 
-            System.out.print(fatorial +"! = ");
-            for(int i = fatorial ; i >= 1 ; i --) {
-                multiplicacao = multiplicacao * i;
+            System.out.print(valor +"! = ");
+            for(int i = valor; i >= 1; i--) {
+                resultado = resultado * i;
             }
 
-            System.out.println(multiplicacao);
+            System.out.println(resultado);
 
             System.out.println("Deseja continuar (s/n): ");
             repetir = scan.next();
