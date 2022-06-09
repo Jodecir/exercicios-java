@@ -13,10 +13,10 @@ public class ConversorDeTemperatura {
         String repetir;
 
         do {
-            System.out.println("Insira o valor: ");
+            System.out.print("Insira o valor: ");
             n1 = scan.nextInt();
 
-            System.out.println("Insira a escala que ele está entre (F/C/K): ");
+            System.out.print("Insira a escala que ele está entre (F/C/K): ");
             escala = scan.next();
             
             double ctof = (n1 * 1.8) + 32;
