@@ -10,7 +10,7 @@ public class TrianguloDeNumeros {
         String repetir;
         
         do {
-            System.out.print("Triangulo de numeros: ");
+            System.out.print("Insira o limite de números no Triangulo: ");
             int valorFinal = scan.nextInt();
             
             for(int linha = 1; linha <= valorFinal + 1; linha++) {
