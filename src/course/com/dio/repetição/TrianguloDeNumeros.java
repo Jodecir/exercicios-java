@@ -9,7 +9,7 @@ public class TrianguloDeNumeros {
         boolean fechado = false;
         String repetir;
         do {
-            System.out.println("Triangulo de numeros: ");
+            System.out.print("Triangulo de numeros: ");
             int valorFinal = scan.nextInt();
             
             for(int linha = 1; linha <= valorFinal + 1; linha++) {
