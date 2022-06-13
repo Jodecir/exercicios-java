@@ -12,6 +12,14 @@ Repositório de estudo e resoluções de problemas em java
 
 [![Java Badge](https://img.shields.io/badge/Java-%23ED8B00.svg?style=flat-square&logo=java&logoColor=white&link=https://docs.oracle.com/en/java/)](https://docs.oracle.com/en/java/)
 
+### Recursos:
+
+* [Print](https://www.w3schools.com/java/java_output.asp)
+* [If](https://www.w3schools.com/java/java_conditions.asp)
+* [Do/While](https://www.w3schools.com/java/java_while_loop.asp)
+* [For](https://www.w3schools.com/java/java_for_loop.asp)
+* [Scanner](https://www.w3schools.com/java/java_user_input.asp)
+
 #### Contatos:
 
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://https://www.linkedin.com/in/jodecir/)](https://www.linkedin.com/in/jodecir/) 
