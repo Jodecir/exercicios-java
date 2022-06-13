@@ -10,6 +10,7 @@ public class Idade {
 
         int idade;
         int maiorIdade = 18;
+        int idadeVoto = 16;
         String situacao;
 
         boolean fechado = false;
@@ -19,11 +20,19 @@ public class Idade {
             idade = Integer.parseInt(JOptionPane.showInputDialog("Insira sua idade: "));
 
             if (idade >= maiorIdade) {
-                situacao = "já podendo dirigir";
+                situacao = "já podendo dirigir.";
                 System.out.println("Você é maior de idade, " + situacao);
             } else if (idade > 0 & idade < maiorIdade) {
-                situacao = "ainda não podendo dirigir";
+                situacao = "ainda não podendo dirigir.";
                 System.out.println("Você é menor de idade, " + situacao);
+            } else {
+                System.out.println("Valor inválido");
+            }
+            
+            if (idade >= idadeVoto) {
+                System.out.println("Também podendo votar.");
+            } else if (idade > 0 & idade < idadeVoto) {
+                System.out.println("Não podendo votar.");
             } else {
                 System.out.println("Valor inválido");
             }
