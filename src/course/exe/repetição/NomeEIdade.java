@@ -1,22 +1,24 @@
-package src.course.com.dio.repetição;
+package src.course.exe.repetição;
 
 import java.util.Scanner;
 
-public class Tabuada {
+public class NomeEIdade {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
+        String nome;
+        int idade;
         boolean fechado = false;
         String repetir;
 
         do {
-            System.out.print("Insira o número que deseja a tabuada: ");
-            int tabuada = scan.nextInt();
+            System.out.println("Nome: ");
+            nome = scan.next();
+            if (nome.equals("0")) break;
 
-            System.out.println("Tabuada do " + tabuada + ":");
-            for(int i = 1; i <= 10; i = i + 1) {
-                System.out.println(tabuada + " X " + i + " = " + (tabuada * i));
-            }
+            System.out.println("Idade: ");
+            idade = scan.nextInt();
+            if (idade < 0 | idade > 100) break;
 
             System.out.println("Deseja continuar (s/n): ");
             repetir = scan.next();

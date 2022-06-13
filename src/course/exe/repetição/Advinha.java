@@ -1,4 +1,4 @@
-package src.course.com.dio.repetição;
+package src.course.exe.repetição;
 
 import java.util.Random;
 import java.util.Scanner;

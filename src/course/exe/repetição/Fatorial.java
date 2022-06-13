@@ -1,24 +1,26 @@
-package src.course.com.dio.repetição;
+package src.course.exe.repetição;
 
 import java.util.Scanner;
 
-public class NomeEIdade {
+public class Fatorial {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        String nome;
-        int idade;
         boolean fechado = false;
         String repetir;
 
         do {
-            System.out.println("Nome: ");
-            nome = scan.next();
-            if (nome.equals("0")) break;
+            System.out.print("Insira o número que deseja o fatorial: ");
+            int valor = scan.nextInt();
 
-            System.out.println("Idade: ");
-            idade = scan.nextInt();
-            if (idade < 0 | idade > 100) break;
+            int resultado = 1;
+
+            System.out.print(valor + "! = ");
+            for(int i = valor; i >= 1; i--) {
+                resultado = resultado * i;
+            }
+
+            System.out.println(resultado);
 
             System.out.println("Deseja continuar (s/n): ");
             repetir = scan.next();

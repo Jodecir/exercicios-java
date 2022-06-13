@@ -1,4 +1,4 @@
-package src.course.com.dio.array;
+package src.course.exe.array;
 
 import java.util.Scanner;
 

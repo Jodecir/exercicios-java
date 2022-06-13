@@ -1,8 +1,8 @@
-package src.course.com.dio.repetição;
+package src.course.exe.repetição;
 
 import java.util.Scanner;
 
-public class Fatorial {
+public class Tabuada {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
@@ -10,17 +10,13 @@ public class Fatorial {
         String repetir;
 
         do {
-            System.out.print("Insira o número que deseja o fatorial: ");
-            int valor = scan.nextInt();
+            System.out.print("Insira o número que deseja a tabuada: ");
+            int tabuada = scan.nextInt();
 
-            int resultado = 1;
-
-            System.out.print(valor + "! = ");
-            for(int i = valor; i >= 1; i--) {
-                resultado = resultado * i;
+            System.out.println("Tabuada do " + tabuada + ":");
+            for(int i = 1; i <= 10; i = i + 1) {
+                System.out.println(tabuada + " X " + i + " = " + (tabuada * i));
             }
-
-            System.out.println(resultado);
 
             System.out.println("Deseja continuar (s/n): ");
             repetir = scan.next();
